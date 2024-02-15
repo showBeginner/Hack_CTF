@@ -40,7 +40,7 @@ iVar3 = strncmp(encrypt_user_input
                 ,100);
 ```
 After encrypt user_input, user_input compare to `string`.\
-We can reverse: `char - 'a'` it to compare to our brute user_input.
+We can reverse: `char + 'a'` it to compare to our brute user_input.
 ```c
       else {
         cVar2 = jumble(user_input[local_f0]);
