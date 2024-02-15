@@ -32,12 +32,15 @@ undefined8 valid_char(char param_1){
 `jumble` is the special operation with user_input.======> We can pass this function logical.
 
 ```c
+for (i = 0; i < local_f0; i = i + 1) {
+  encrypt_user_input[i] = encrypt_user_input[i] + 'a';
+}
 iVar3 = strncmp(encrypt_user_input
                 "mlaebfkoibhoijfidblechbggcgldicegjbkcmolhdjihgmmieabohpdhjnciacbjjcnpcfaopigkpdfnoaknjlnlaohboimombk"
                 ,100);
 ```
 After encrypt user_input, user_input compare to `string`.\
-We can reverse it to compare to our brute user_input.
+We can reverse: `char - 'a'` it to compare to our brute user_input.
 ```c
       else {
         cVar2 = jumble(user_input[local_f0]);
@@ -57,7 +60,7 @@ We can reverse it to compare to our brute user_input.
                ff ff ff 
                01
 ```
-We can find `00100935` that represents user_input is encrypted.
+We can find 00100935 that represents user_input have been encrypted.
 So we set this address is `Breakpoint:checkpoint`.
 Our brute user_input compare to `$DL`.
 And found correct user_input address `Breakpoint:solvepoint` `0x5555554009e5`.
